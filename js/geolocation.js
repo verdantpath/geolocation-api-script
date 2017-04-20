@@ -17,3 +17,9 @@ function success(position) {
 	msg += position.coords.latitude + '</h3>';
 	elMap.innerHTML = msg;
 }
+
+// CREATE FAIL MESSAGE
+function fail(msg) {
+	elMap.textContent = msg;
+	console.log(msg.code);
+}
